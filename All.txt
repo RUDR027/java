@@ -1,0 +1,715 @@
+
+Write a Program to check whether entered number is even or odd
+
+import java.util.Scanner;
+
+public class EvenOrOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println(num + " is even.");
+        } else {
+            System.out.println(num + " is odd.");
+        }
+    }
+} 
+
+
+
+
+
+2.Write any program using switch statement
+
+import java.util.Scanner;
+
+public class DayOfWeek {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number between 1 and 7: ");
+        int day = scanner.nextInt();
+
+        String dayOfWeek;
+
+        switch (day) {
+            case 1:
+                dayOfWeek = "Sunday";
+                break;
+            case 2:
+                dayOfWeek = "Monday";
+                break;
+            case 3:
+                dayOfWeek = "Tuesday";
+                break;
+            case 4:
+                dayOfWeek = "Wednesday";
+                break;
+            case 5:
+                dayOfWeek = "Thursday";
+                break;
+            case 6:
+                dayOfWeek = "Friday";
+                break;
+            case 7:
+                dayOfWeek = "Saturday";
+                break;
+            default:
+                dayOfWeek = "Invalid day";
+                break;
+        }
+
+        System.out.println("The day of the week is " + dayOfWeek);
+    }
+}
+
+
+
+3. Write a program to generate a Fibonacci series: 1 1 2 3 5 8 13 21 34 55 89
+
+
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+ System.out.print("Enter the number of terms in the series: ");
+ int n = input.nextInt();
+ int firstTerm = 1, secondTerm = 1;
+ System.out.print(firstTerm + " " + secondTerm);
+ for (int i = 3; i <= n; i++) {
+ int nextTerm = firstTerm + secondTerm;
+ System.out.print(" " + nextTerm);
+ firstTerm = secondTerm;
+ secondTerm = nextTerm;
+ }
+ }
+}
+
+
+4. Write a program to find out greatest number among three number
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter the first number: ");
+    int num1 = input.nextInt();
+
+    System.out.print("Enter the second number: ");
+    int num2 = input.nextInt();
+
+    System.out.print("Enter the third number: ");
+    int num3 = input.nextInt();
+
+    int greatest = num1;
+
+    if (num2 > greatest) {
+      greatest = num2;
+    }
+
+    if (num3 > greatest) {
+      greatest = num3;
+    }
+
+    System.out.println("The greatest number is " + greatest);
+  }
+}
+
+
+
+5. Write a program to print even numbers between 1 to 10 and sum of them
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 2; i <= 10; i += 2) {
+            System.out.println(i);
+            sum += i;
+        }
+        System.out.println("Sum of even numbers between 1 to 10 is: " + sum);
+    }
+}
+
+
+
+6.Write a program to print star pattern
+
+a. Easy Code:
+public class StarPatternExample {
+   public static void main(String[] args) {
+      int rows = 5;
+
+      for (int i = 1; i <= rows; i++) {
+         for (int j = 1; j <= i; j++) {
+            System.out.print("* ");
+         }
+         System.out.println();
+      }
+   }
+}
+
+
+b. Hard code
+public class StarPatternExample {
+   public static void main(String[] args) {
+      int rows = 5;
+
+      for (int i = 1; i <= rows; i++) {
+         for (int j = rows; j > i; j--) {
+            System.out.print(" ");
+         }
+         for (int k = 1; k <= i; k++) {
+            System.out.print("* ");
+         }
+         System.out.println();
+      }
+
+      for (int i = rows - 1; i >= 1; i--) {
+         for (int j = rows; j > i; j--) {
+            System.out.print(" ");
+         }
+         for (int k = 1; k <= i; k++) {
+            System.out.print("* ");
+         }
+         System.out.println();
+      }
+   }
+}
+
+
+
+7. Write a program to display number 1 to 50 using do-while loop
+
+public class DoWhileLoopExample {
+   public static void main(String[] args) {
+      int i = 1;
+      
+      do {
+         System.out.println(i);
+         i++;
+      } while (i <= 50);
+   }
+}
+
+
+8. Write a program to implement different types of constructor(default/parametrized)
+
+public class Person {
+    private String name;
+    private int age;
+
+    // Default constructor
+    public Person() {
+        this.name = "";
+        this.age = 0;
+    }
+
+    // Parameterized constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getter methods
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    // Setter methods
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Main method to test the class
+    public static void main(String[] args) {
+        // Create objects using different constructors
+        Person p1 = new Person();
+        Person p2 = new Person("John", 30);
+
+        // Set values using setter methods
+        p1.setName("Jane");
+        p1.setAge(25);
+
+        // Print values using getter methods
+        System.out.println("Person 1: Name = " + p1.getName() + ", Age = " + p1.getAge());
+        System.out.println("Person 2: Name = " + p2.getName() + ", Age = " + p2.getAge());
+    }
+}
+
+
+
+9. Write a program to perform any four methods of String class
+
+public class StringMethodsExample {
+   public static void main(String[] args) {
+      String str1 = "Hello World";
+      String str2 = "  Java Programming  ";
+
+      // Method 1: length()
+      int len = str1.length();
+      System.out.println("The length of str1 is: " + len);
+
+      // Method 2: charAt()
+      char ch = str1.charAt(6);
+      System.out.println("The character at index 6 in str1 is: " + ch);
+
+      // Method 3: toUpperCase()
+      String upperCaseStr = str1.toUpperCase();
+      System.out.println("The uppercase version of str1 is: " + upperCaseStr);
+
+      // Method 4: trim()
+      String trimmedStr = str2.trim();
+      System.out.println("The trimmed version of str2 is: " + trimmedStr);
+   }
+}
+
+
+
+10. Write a program to implement two dimension array
+
+
+  public class Main {
+ public static void main(String[] args) {
+ int[][] arr = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+ // Accessing and printing elements of the array
+ for (int i = 0; i < arr.length; i++) {
+ for (int j = 0; j < arr[i].length; j++)
+ {
+ System.out.print(arr[i][j] + " ");
+ }
+ System.out.println();
+ }
+ }
+}
+
+
+11.Write a program to create a vector and perform methods of vector class
+
+import java.util.*;
+public class q11 {
+
+ public static void main(String[] args) {
+ Vector<Integer> v = new Vector<Integer>();
+ v.add(1);
+ v.add(2);
+ v.add(3);
+ v.add(4);
+System.out.println("Vector: " + v);
+System.out.println("Size of vector: " + v.size());
+System.out.println("Capacity of vector: " +
+v.capacity());
+System.out.println("Element at index 2: " + v.get(2));
+ System.out.println("First element: " + v.firstElement());
+ System.out.println("Last element: " + v.lastElement());
+ System.out.println("Index of element 3: " +
+v.indexOf(3));
+ System.out.println("Last index of element 3: " +
+v.lastIndexOf(3));
+ System.out.println("Is vector empty: " + v.isEmpty());
+System.out.println("Is vector contains 3: " +
+v.contains(3));
+System.out.println("Vector after removing element at
+index 2: " + v.remove(2));
+System.out.println("Vector after removing element 3: " +
+v.remove((Integer) 3));
+ System.out.println("Vector after setting element at index
+1: " + v.set(1, 5));
+ System.out.println("Vector after adding element 6 at
+index 2: " + v.add(2, 6));
+ System.out.println("Vector after adding element 7 at
+last: " + v.add(7));
+System.out.println("Vector after adding element 8 at
+first: " + v.add(0, 8));
+ System.out.println("Vector after clearing: " +
+v.clear());
+ }
+ } 
+
+12.Write a program to demonstrate use of method overriding
+
+class Shape {
+   public void draw() {
+      System.out.println("Drawing a shape");
+   }
+}
+
+class Circle extends Shape {
+   @Override
+   public void draw() {
+      System.out.println("Drawing a circle");
+   }
+}
+
+public class MethodOverridingExample {
+   public static void main(String[] args) {
+      Shape shape = new Shape();
+      Circle circle = new Circle();
+
+      shape.draw();   // Output: Drawing a shape
+      circle.draw();  // Output: Drawing a circle
+   }
+}
+
+
+13. Write a program to implement single level inheritance
+
+class q13 {
+ public static void main(String[] args) {
+ B b = new B();
+ b.show();
+ }
+ }
+
+ class A {
+ void show() {
+ System.out.println("Class A");
+ }
+ }
+
+ class B extends A {
+ void show() {
+ System.out.println("Class B");
+ }
+ }
+
+
+
+
+14. Write a program to create two threads: one thread print numbers in ascending order and other thread print number in reverse order from 1 to 10
+
+class Ascending extends Thread
+{
+ public void run()
+ {
+ for(int i=1;i<=10;i++)
+ {
+ System.out.println("Ascending order: "+i);
+ }
+ }
+}
+class Descending extends Thread
+{
+ public void run()
+ {
+ for(int i=10;i>=1;i--)
+ {
+ System.out.println("Descending order: "+i);
+ }
+ }
+}
+public class result
+{
+ public staƟc void main(String args[])
+ {
+ Ascending a=new Ascending();
+ Descending d=new Descending();
+ a.start();
+ d.start();
+ }
+}
+
+
+
+
+15. Write a program to accept password from the user and throw “AuthenƟcaƟon Failure” excepƟon if the password is incorrect
+
+import java.util.Scanner;
+
+class AuthenticationException extends Exception {
+   public AuthenticationException(String message) {
+      super(message);
+   }
+}
+
+public class PasswordAuthentication {
+   public static void main(String[] args) {
+      String password = "mypassword";
+      Scanner scanner = new Scanner(System.in);
+      
+      System.out.print("Enter password: ");
+      String inputPassword = scanner.nextLine();
+
+      try {
+         if (!inputPassword.equals(password)) {
+            throw new AuthenticationException("Authentication Failure: Incorrect password");
+         } else {
+            System.out.println("Authentication successful!");
+         }
+      } catch (AuthenticationException e) {
+         System.out.println(e.getMessage());
+      }
+   }
+}
+
+
+
+
+16. Write an applet program to draw basic animated shapes
+
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class AnimatedShapes extends Applet implements Runnable {
+   private Thread animationThread;
+   private int x, y, width, height;
+   
+   public void init() {
+      x = 0;
+      y = 0;
+      width = 50;
+      height = 50;
+      setBackground(Color.white);
+   }
+   
+   public void start() {
+      animationThread = new Thread(this);
+      animationThread.start();
+   }
+   
+   public void stop() {
+      animationThread = null;
+   }
+   
+   public void run() {
+      while (animationThread != null) {
+         x += 5;
+         y += 5;
+         
+         if (x > getWidth()) {
+            x = 0;
+         }
+         if (y > getHeight()) {
+            y = 0;
+         }
+         
+         repaint();
+         
+         try {
+            Thread.sleep(100);
+         } catch (InterruptedException e) {
+            e.printStackTrace();
+         }
+      }
+   }
+   
+   public void paint(Graphics g) {
+      g.setColor(Color.red);
+      g.fillRect(x, y, width, height);
+   }
+}
+
+
+
+
+17. Write an applet program to display square inside circle
+
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class SquareInsideCircle extends Applet {
+   public void paint(Graphics g) {
+      
+      setBackground(Color.white);
+    
+      g.setColor(Color.blue);
+      g.drawOval(50, 50, 100, 100);
+      
+      g.setColor(Color.red);
+      g.drawRect(75, 75, 50, 50);
+   }
+}
+
+
+
+18.Write an applet program to display triangle with filled red color
+
+import java.applet.Applet;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Polygon;
+
+public class FilledTriangle extends Applet {
+   public void paint(Graphics g) {
+      
+      setBackground(Color.white);
+     
+      Polygon triangle = new Polygon();
+      triangle.addPoint(50, 150);
+      triangle.addPoint(150, 150);
+      triangle.addPoint(100, 50);
+     
+      g.setColor(Color.red);
+      g.fillPolygon(triangle);
+   }
+}
+
+
+
+
+19. Write a program to perform following task: Calculate the length of string, Compare between strings, ConcatenaƟng strings
+
+public class StringOperations {
+   public static void main(String[] args) {
+      String str1 = "Hello";
+      String str2 = "World";
+      
+      // calculate the length of str1
+      int length = str1.length();
+      System.out.println("Length of str1: " + length);
+      
+      // compare str1 and str2
+      boolean isEqual = str1.equals(str2);
+      System.out.println("str1 equals str2: " + isEqual);
+      
+      // concatenate str1 and str2
+      String result = str1.concat(str2);
+      System.out.println("Concatenated string: " + result);
+   }
+}
+
+
+
+20.  Write a program to print odd number between 1 to 10 and sum of them
+
+public class OddNumbers {
+   public static void main(String[] args) {
+      int sum = 0;
+      
+      for (int i = 1; i <= 10; i++) {
+         if (i % 2 == 1) {
+            System.out.println(i);
+            sum += i;
+         }
+      }
+      
+      System.out.println("Sum of odd numbers: " + sum);
+   }
+}
+
+
+
+
+21. Write a program to print reverse of a number.
+
+import java.util.Scanner;
+
+public class ReverseNumber {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter a number: ");
+      int number = scanner.nextInt();
+      int reversedNumber = 0;
+      
+      while (number != 0) {
+         int digit = number % 10;
+         reversedNumber = reversedNumber * 10 + digit;
+         number /= 10;
+      }
+      
+      System.out.println("Reversed number: " + reversedNumber);
+   }
+}
+
+
+
+22.Write a program to find greatest number among three numbers.
+
+import java.util.Scanner;
+
+public class GreatestNumber {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter first number: ");
+      int num1 = scanner.nextInt();
+      System.out.print("Enter second number: ");
+      int num2 = scanner.nextInt();
+      System.out.print("Enter third number: ");
+      int num3 = scanner.nextInt();
+      
+      int max = num1;
+      
+      if (num2 > max) {
+         max = num2;
+      }
+      
+      if (num3 > max) {
+         max = num3;
+      }
+      
+      System.out.println("Greatest number is: " + max);
+   }
+}
+
+
+
+23. Define a class ‘employee’ with data members empid, name and salary. Accept data for two employee and display details.
+
+import java.util.Scanner;
+
+ class employee {
+ int empid;
+ String name;
+ double salary;
+
+ void accept() {
+ Scanner sc = new Scanner(System.in);
+ System.out.print("Enter employee id: ");
+ empid = sc.nextInt();
+ sc.nextLine();
+ System.out.print("Enter employee name: ");
+ name = sc.nextLine();
+ System.out.print("Enter employee salary: ");
+ salary = sc.nextDouble();
+ }
+
+ void display() {
+ System.out.println("Employee id: " + empid);
+ System.out.println("Employee name: " + name);
+ System.out.println("Employee salary: " + salary);
+ }
+ }
+
+ class q23 {
+ public static void main(String[] args) {
+employee e1 = new employee();
+ employee e2 = new employee();
+ e1.accept();
+ e2.accept();
+ e1.display();
+ e2.display();
+ }
+ }
+
+
+
+
+24. Write a program to implement vector class and its methods for adding and removing elements.
+
+import java.util.Vector;
+
+ class q24 {
+ public static void main(String[] args) {
+ Vector<Integer> v = new Vector<Integer>();
+ v.add(1);
+ v.add(2);
+ v.add(3);
+ System.out.println("Vector: " + v);
+ v.remove(1);
+ System.out.println("Vector: " + v);
+ }
+}
+
