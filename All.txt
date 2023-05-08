@@ -1,5 +1,5 @@
 
-Write a Program to check whether entered number is even or odd
+1) Write a Program to check whether entered number is even or odd
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class EvenOrOdd {
     }
 } 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -65,7 +65,7 @@ public class DayOfWeek {
     }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. Write a program to generate a Fibonacci series: 1 1 2 3 5 8 13 21 34 55 89
 
@@ -87,6 +87,7 @@ public class Main {
  }
 }
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4. Write a program to find out greatest number among three number
 
@@ -119,7 +120,7 @@ public class Main {
   }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5. Write a program to print even numbers between 1 to 10 and sum of them
 
@@ -134,7 +135,7 @@ public class EvenNumbers {
     }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6.Write a program to print star pattern
 
@@ -180,7 +181,7 @@ public class StarPatternExample {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7. Write a program to display number 1 to 50 using do-while loop
 
@@ -195,6 +196,7 @@ public class DoWhileLoopExample {
    }
 }
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8. Write a program to implement different types of constructor(default/parametrized)
 
@@ -248,7 +250,7 @@ public class Person {
     }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9. Write a program to perform any four methods of String class
 
@@ -275,7 +277,7 @@ public class StringMethodsExample {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 10. Write a program to implement two dimension array
 
@@ -294,6 +296,7 @@ public class StringMethodsExample {
  }
 }
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 11.Write a program to create a vector and perform methods of vector class
 
@@ -337,6 +340,8 @@ v.clear());
  }
  } 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 12.Write a program to demonstrate use of method overriding
 
 class Shape {
@@ -362,6 +367,7 @@ public class MethodOverridingExample {
    }
 }
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 13. Write a program to implement single level inheritance
 
@@ -385,7 +391,7 @@ class q13 {
  }
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 14. Write a program to create two threads: one thread print numbers in ascending order and other thread print number in reverse order from 1 to 10
 
@@ -420,7 +426,7 @@ public class result
  }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 15. Write a program to accept password from the user and throw “AuthenƟcaƟon Failure” excepƟon if the password is incorrect
@@ -453,7 +459,7 @@ public class PasswordAuthentication {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 16. Write an applet program to draw basic animated shapes
@@ -511,7 +517,7 @@ public class AnimatedShapes extends Applet implements Runnable {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 17. Write an applet program to display square inside circle
@@ -533,7 +539,7 @@ public class SquareInsideCircle extends Applet {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 18.Write an applet program to display triangle with filled red color
 
@@ -557,7 +563,7 @@ public class FilledTriangle extends Applet {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 19. Write a program to perform following task: Calculate the length of string, Compare between strings, ConcatenaƟng strings
@@ -581,7 +587,7 @@ public class StringOperations {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 20.  Write a program to print odd number between 1 to 10 and sum of them
 
@@ -600,7 +606,7 @@ public class OddNumbers {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 21. Write a program to print reverse of a number.
@@ -624,7 +630,7 @@ public class ReverseNumber {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 22.Write a program to find greatest number among three numbers.
 
@@ -654,7 +660,7 @@ public class GreatestNumber {
    }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 23. Define a class ‘employee’ with data members empid, name and salary. Accept data for two employee and display details.
 
@@ -695,7 +701,7 @@ employee e1 = new employee();
  }
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 24. Write a program to implement vector class and its methods for adding and removing elements.
 
